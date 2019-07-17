@@ -329,7 +329,11 @@ def winning_team
       end
   end
   
-  return [away_score,home_score].max
+  if home_score > away_score
+    return game_hash[:home][:team_name]
+  elsif away_score > home_score
+    return game_hash[:away][:team_name]
+  end
 end
 
 # 3. Which player has the longest name? Call the method `player_with_longest_name`.
