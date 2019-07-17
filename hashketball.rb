@@ -329,7 +329,7 @@ def winning_team
       end
   end
   
-  return top_scorer
+  return [away_score,home_score].max
 end
 
 # 3. Which player has the longest name? Call the method `player_with_longest_name`.
