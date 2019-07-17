@@ -322,7 +322,7 @@ def winning_team
                 away_score += v[:points]
               elsif location == :home
                 home_score += v[:points]
-            
+              end
             end
           end
         end
