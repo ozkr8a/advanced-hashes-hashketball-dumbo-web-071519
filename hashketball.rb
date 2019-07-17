@@ -308,7 +308,26 @@ end
 # 2. Which team has the most points? Call the method `winning_team`.
 
 def winning_team
+  away_score = 0
+  home_score = 0
   
+  game_hash.each do |location, team_data|
+    
+      team_data.each do |attribute, data|
+        
+        if attribute == :players
+          data.each do |player|
+            player.each do |k,v|
+              if 
+                v[:points]
+            
+            end
+          end
+        end
+      end
+  end
+  
+  return top_scorer
 end
 
 # 3. Which player has the longest name? Call the method `player_with_longest_name`.
